@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         mediumPieChart.style.setProperty("--colorPercentage", `${totalMediumSolvedPercent}%`);
         hardPieChart.style.setProperty("--colorPercentage", `${totalHardSolvedPercent}%`);
         easyPieChart.insertAdjacentHTML("afterBegin", `<p>${userData.easySolved} / ${userData.totalEasy}</p>`)
-        mediumPieChart.insertAdjacentHTML("afterBegin",`<p>${userData.mediumSolved}/ ${userData.totalEasy}</p>`)
-        hardPieChart.insertAdjacentHTML("afterBegin", `<p>${userData.hardSolved} / ${userData.totalEasy}</p>`)
+        mediumPieChart.insertAdjacentHTML("afterBegin",`<p>${userData.mediumSolved}/ ${userData.totalMedium}</p>`)
+        hardPieChart.insertAdjacentHTML("afterBegin", `<p>${userData.hardSolved} / ${userData.totalHard}</p>`)
         
 
         let newElement1 = document.createElement("p");
